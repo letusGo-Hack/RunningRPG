@@ -13,6 +13,7 @@ struct RunningRPGDynamicIslandAttributes: ActivityAttributes {
     public struct ContentState: Codable, Hashable {
         // Dynamic stateful properties about your activity go here!
         var value: Int
+        var pitch: Double?
     }
 
     // Fixed non-changing properties about your activity go here!
@@ -21,7 +22,7 @@ struct RunningRPGDynamicIslandAttributes: ActivityAttributes {
 
 struct RunningRPGDynamicIslandLiveActivity: Widget {
     var body: some WidgetConfiguration {
-        ActivityConfiguration(for: RunningRPGDynamicIslandAttributes.self) { context in
+        ActivityConfiguration(for: RunAttributes.self) { context in
             // Lock screen/banner UI goes here
             VStack {
                 Text("Hello")
@@ -34,28 +35,34 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                 DynamicIslandExpandedRegion(.bottom) {
                     VStack {
                         HStack(alignment: .center, spacing: .zero) {
-                            Image("human_small")
+                            let _ = print(context.attributes.character)
+                            let _ = print(context.state.monster)
+                            Image(context.attributes.character.avatar)
                                 .resizable()
                                 .frame(width: 37, height: 58)
                             
                             Spacer()
                             
-                            VStack {
-                                Text("10000")
+                            HStack {
+                                Text("\(context.state.monster.currentHp)")
+                                    .font(.system(size: 40, weight: .bold))
+                                    .foregroundStyle(.white)
+                                Text("/\(context.state.monster.hp)")
                                     .font(.system(size: 40, weight: .bold))
                                     .foregroundStyle(.white)
                             }
                             
                             Spacer()
                             
-                            Image("monster_pizza_small")
+                            Image(context.state.monster.avatar)
                                 .resizable()
                                 .frame(width: 52, height: 46)
                         }
+                        
                         ProgressView(value: 50, total: 100)
                         .progressViewStyle(.linear)
                         .tint(Color.red)
-                        .scaleEffect(x: 0, y: 2, anchor: .center)
+//                        .scaleEffect(x: 0, y: 2, anchor: .center)
                     }
                     
                     // more content

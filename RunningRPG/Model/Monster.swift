@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import WidgetKit
+import AppIntents
 
 struct Monster: Hashable, Codable, Identifiable {
   let name: String
@@ -16,4 +18,14 @@ struct Monster: Hashable, Codable, Identifiable {
   var id: String {
     name
   }
+}
+
+extension Monster {
+    static func generatMock() -> [Monster] {
+        return [
+            Monster(name: "칼든사람", hp: 100, currentHp: 100, avatar: "monster_swordshield_small")
+        ]
+        
+        
+    }
 }
