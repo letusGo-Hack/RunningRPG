@@ -44,10 +44,10 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                             Spacer()
                             
                             HStack {
-                                Text("\(context.state.monster.currentHp)")
+                                Text(context.state.monster.currentHp.uptoSecondDecimal())
                                     .font(.system(size: 20, weight: .bold))
                                     .foregroundStyle(.white)
-                                Text("/\(context.state.monster.hp)")
+                                Text("/ \(context.state.monster.hp.uptoSecondDecimal())")
                                     .font(.system(size: 20, weight: .bold))
                                     .foregroundStyle(.white)
                             }
@@ -59,9 +59,10 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                                 .frame(width: 52, height: 46)
                         }
                         
-                        ProgressView(value: 50, total: 100)
+                        ProgressView(value: context.state.monster.currentHp, total: context.state.monster.hp)
                         .progressViewStyle(.linear)
-                        .tint(Color.red)
+                        .tint(.red)
+                        .accentColor(.black)
 //                        .scaleEffect(x: 0, y: 2, anchor: .center)
                     }
                     

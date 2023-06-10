@@ -25,6 +25,7 @@
 		3961A9A72A345BB1000745FC /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002C2A34240200160BD6 /* Monster.swift */; };
 		3961A9A82A345BD4000745FC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00282A34221900160BD6 /* Character.swift */; };
 		3961A9A92A345EB2000745FC /* Equiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002A2A34236700160BD6 /* Equiment.swift */; };
+		3961A9AA2A347A38000745FC /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAEB62A344AF5006E7EF9 /* Double+.swift */; };
 		3985AB1D2A3447ED004F1AA6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE62A3447AA004F1AA6 /* WidgetKit.framework */; };
 		3985AB1E2A3447ED004F1AA6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE82A3447AA004F1AA6 /* SwiftUI.framework */; };
 		3985AB212A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985AB202A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift */; };
@@ -607,6 +608,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3985AB212A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift in Sources */,
+				3961A9AA2A347A38000745FC /* Double+.swift in Sources */,
 				3961A9A92A345EB2000745FC /* Equiment.swift in Sources */,
 				3985AB232A3447ED004F1AA6 /* RunningRPGDynamicIslandLiveActivity.swift in Sources */,
 				3961A9A82A345BD4000745FC /* Character.swift in Sources */,
