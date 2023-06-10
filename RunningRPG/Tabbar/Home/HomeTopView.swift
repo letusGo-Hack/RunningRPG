@@ -8,21 +8,36 @@
 
 
 import SwiftUI
+
 import CoreMotion
 import ActivityKit
 
+
 struct HomeTopView: View {
     
-    let motionManager = CMMotionManager()
-    let queue = OperationQueue()
-
-    @State private var pitch = Double.zero
-    @State private var yaw = Double.zero
-    @State private var roll = Double.zero
+    var preStepCount = 0
     
+    @ObservedObject private var stepsOO = CoreMotionService.shared
+    
+    var char = Character(
+        name: "dumm",
+        avatar: "avatar",
+        damage: 1,
+        equiment: Equiment(damage: 1, category: -1, name: ""),
+        walkCount: 111
+    )
+    
+    var mob = MonsterListItem.generateMonsters().first!
+    
+    func getHPPercent() -> Double {
+        let step = Int(truncating: stepsOO.steps) - preStepCount
+        let damage = char.damage * Double(step)
+        let hp = mob.monster.hp
+        
+        return (hp - damage) / hp
+    }
     
     var body: some View {
-        
         ZStack {
             Image("forestBG")
                 .resizable()
@@ -35,13 +50,7 @@ struct HomeTopView: View {
                 
                 VStack {
                     
-                    Text("걸음수 : \(pitch)")
-                        .background(Color.white)
-                    
-                    Text("걸음수 : \(yaw)")
-                        .background(Color.white)
-                    
-                    Text("걸음수 : \(roll)")
+                    Text("걸음수 : \(stepsOO.steps)")
                         .background(Color.white)
                     
                     Rectangle()
@@ -50,16 +59,21 @@ struct HomeTopView: View {
                 }
                 VStack {
                     
-                    HStack(spacing: 0) {
+                    ZStack {
+                        HStack(spacing: 0) {
+                            
+                            Rectangle()
+                                .fill(Color.red)
+                                .frame(width: 100 * getHPPercent(), height: 13)
+                            
+                            Rectangle()
+                                .fill(Color.gray)
+                                .frame(width: 100 - 100 * getHPPercent(), height: 13)
+                            
+                        }
                         
-                        Rectangle()
-                            .fill(Color.red)
-                            .frame(width: 50, height: 10)
-                        
-                        Rectangle()
-                            .fill(Color.gray)
-                            .frame(width: 50, height: 10)
-                        
+                        Text("\(Int(mob.monster.hp))")
+    
                     }
                     
                     Image("monster_ squirrel")
@@ -68,24 +82,6 @@ struct HomeTopView: View {
                     
                 }
                 
-            }
-        }.onAppear {
-            self.motionManager.startDeviceMotionUpdates(to: self.queue) { (data: CMDeviceMotion?, error: Error?) in
-                guard let data = data else {
-                    print("Error: \(error!)")
-                    return
-                }
-                let attitude: CMAttitude = data.attitude
-                
-                print("pitch: \(attitude.pitch)")
-                print("yaw: \(attitude.yaw)")
-                print("roll: \(attitude.roll)")
-                
-                DispatchQueue.main.async {
-                    self.pitch = attitude.pitch
-                    self.yaw = attitude.yaw
-                    self.roll = attitude.roll
-                }
             }
         }
     }

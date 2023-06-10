@@ -9,9 +9,8 @@ import SwiftUI
 import SwiftData
 
 struct HomeView: View {
-    @Environment(\.modelContext) private var modelContext
-//    @Query private var monster: Monster
-//    @Query private var character: [Monster]
+    
+    private var monster: MonsterListItem = MonsterListItem.generateMonsters().first!
     
     var body: some View {
         VStack {
@@ -19,21 +18,8 @@ struct HomeView: View {
             HomeBottomView()
         }
     }
-
-//    private func addItem() {
-//        withAnimation {
-//            let newItem = Item(timestamp: Date())
-//            modelContext.insert(newItem)
-//        }
-//    }
-//
-//    private func deleteItems(offsets: IndexSet) {
-//        withAnimation {
-//            for index in offsets {
-//                modelContext.delete(items[index])
-//            }
-//        }
-//    }
+    
+    
 }
 
 #Preview {
