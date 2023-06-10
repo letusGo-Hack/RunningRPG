@@ -12,6 +12,8 @@ struct Monster: Hashable, Codable, Identifiable {
   let hp: Double
   let currentHp: Double
   let avatar: String
+  let level: Int
+  let isOpen: Bool
 
   var id: String {
     name
