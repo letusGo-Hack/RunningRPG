@@ -15,7 +15,11 @@ class CoreMotionService: ObservableObject {
 //    private var motionManager = CMMotionManager()
     private var pedoMeter = CMPedometer()
     
-    @Published var steps: NSNumber = 0
+	@Published var steps: NSNumber = UserDefaults.standard.value(forKey: "steps") as? NSNumber ?? 0 {
+		didSet {
+			UserDefaults.standard.setValue(steps, forKey: "steps")
+		}
+	}
     
     private init() {
         

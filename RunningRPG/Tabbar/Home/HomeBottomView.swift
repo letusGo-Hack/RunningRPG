@@ -17,8 +17,6 @@ struct HomeBottomView: View {
 		VStack {
             
 			HStack {
-                
-                
                 VStack(spacing: equipmentSpacing) { //left side equiptment
 					Image(systemName: "person")
                         .frame(width: equipmentSize, height: equipmentSize)
