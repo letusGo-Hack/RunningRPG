@@ -29,12 +29,15 @@ struct HomeTopView: View {
     
     var mob = MonsterListItem.generateMonsters().first!
     
-    func getHPPercent() -> Double {
+    func getHpPercent() -> Double {
         let step = Int(truncating: stepsOO.steps) - preStepCount
         let damage = char.damage * Double(step)
-        let hp = mob.monster.hp
         
-        return (hp - damage) / hp
+        let maxHp = mob.monster.hp
+        var currentHp = maxHp - damage
+        if currentHp < 0 { currentHp = 0 }
+        
+        return currentHp / maxHp
     }
     
     var body: some View {
@@ -58,6 +61,7 @@ struct HomeTopView: View {
                         .fill(Color.clear)
                         .frame(width: 150, height: 150)
                 }
+                
                 VStack {
                     
                     ZStack {
@@ -65,11 +69,11 @@ struct HomeTopView: View {
                             
                             Rectangle()
                                 .fill(Color.red)
-                                .frame(width: 100 * getHPPercent(), height: 13)
+                                .frame(width: 100 * getHpPercent(), height: 13)
                             
                             Rectangle()
                                 .fill(Color.gray)
-                                .frame(width: 100 - 100 * getHPPercent(), height: 13)
+                                .frame(width: 100 - 100 * getHpPercent(), height: 13)
                             
                         }
                         

@@ -14,20 +14,12 @@ struct HomeView: View {
     
     var body: some View {
         VStack {
-//            Rectangle()
-//                .fill(Color.clear)
             
             HomeTopView()
                 .frame(minHeight: 0, maxHeight: 262)
             
-//            Rectangle()
-//                .fill(Color.clear)
-            
             HomeBottomView()
-//                .frame(minHeight: 0, maxHeight: .infinity)
             
-//            Rectangle()
-//                .fill(Color.clear)
         }
         .background(Color.white)
 //        .ignoresSafeArea()
