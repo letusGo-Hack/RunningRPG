@@ -19,8 +19,12 @@ struct MonsterInformationView: View {
         Text("Level - \(item.monster.level)")
       })
       HStack(alignment: .top, spacing: 5, content: {
-        Text("\(item.monster.currentHp) / \(item.monster.hp)")
+        Text("HP:")
+        Text("\(item.monster.currentHp.uptoSecondDecimal())")
+        Text("/")
+        Text("\(item.monster.hp.uptoSecondDecimal())")
       })
+      .foregroundStyle(.red)
     })
   }
 }
