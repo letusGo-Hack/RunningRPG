@@ -36,6 +36,14 @@ struct HomeBottomView: View {
                     
                     Image("human") //center
                         .frame(minHeight: 0, maxHeight: .infinity)
+                    
+                    Button {
+                        let step = CoreMotionService.shared.steps.intValue
+                        CoreMotionService.shared.steps = (step + 1) as NSNumber
+                    } label: {
+                        Text("testButton")
+                    }
+
                 }
                 
 				VStack { //right side equiptment

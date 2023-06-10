@@ -12,24 +12,24 @@ class CoreMotionService: ObservableObject {
     
     static let shared = CoreMotionService()
     
-    private var motionManager = CMMotionManager()
+//    private var motionManager = CMMotionManager()
     private var pedoMeter = CMPedometer()
     
     @Published var steps: NSNumber = 0
     
     private init() {
         
-        motionManager.deviceMotionUpdateInterval = 60
-        
-        motionManager.startDeviceMotionUpdates(
-            to: OperationQueue.current!,
-            withHandler: {(
-                deviceMotion: CMDeviceMotion!,
-                error: Error!
-            ) -> Void in
-                print(deviceMotion.gravity)
-            }
-        )
+//        motionManager.deviceMotionUpdateInterval = 60
+//        
+//        motionManager.startDeviceMotionUpdates(
+//            to: OperationQueue.current!,
+//            withHandler: {(
+//                deviceMotion: CMDeviceMotion!,
+//                error: Error!
+//            ) -> Void in
+//                print(deviceMotion.gravity)
+//            }
+//        )
         
         pedoMeter.startUpdates(from: Date()) { [unowned self] data, error in
             if error == nil {

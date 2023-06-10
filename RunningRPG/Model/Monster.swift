@@ -12,7 +12,7 @@ import AppIntents
 struct Monster: Hashable, Codable, Identifiable {
   let name: String
   let hp: Double
-  let currentHp: Double
+  var currentHp: Double
   let avatar: String
   let level: Int
   let isOpen: Bool

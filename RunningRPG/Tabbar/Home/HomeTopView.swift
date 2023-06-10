@@ -12,33 +12,58 @@ import SwiftUI
 import CoreMotion
 import ActivityKit
 
+class HomeViewModel: ObservableObject {
+    
+    @Published var char = Character(
+        name: "",
+        avatar: "",
+        damage: 1,
+        equiment: Equiment(damage: -1, category: -1, name: ""),
+        walkCount: -1
+    )
+    
+    var preStepCount: Int = 0
+    var mob = MonsterListItem.generateMonsters().first!
+    
+    @Published var mobHpPercent: Double = 1
+    
+    
+    func takeStep(_ stepsCount: Int) {
+    
+        print("stepsCount: \(stepsCount)")
+        
+        let takeStep = stepsCount - preStepCount
+        setPreStepCount(stepsCount)
+        print("takeStep: \(takeStep)")
+        
+        let damage = char.damage * Double(takeStep)
+        print("damage: \(damage)")
+        
+        let currentHp = mob.monster.currentHp
+        var calculatedHp = currentHp - damage
+        if calculatedHp < 0 { calculatedHp = 0 }
+        mob.monster.currentHp = calculatedHp
+        print("calculatedHp: \(calculatedHp)")
+        
+        mobHpPercent = calculatedHp / mob.monster.hp
+        print("mobHpPercent: \(mobHpPercent)\n")
+    }
+    
+    init() {
+        print("ViewModel init!")
+    }
+    
+    private func setPreStepCount(_ count: Int) {
+        preStepCount = count
+    }
+}
 
 struct HomeTopView: View {
     
-    var preStepCount = 0
+    @ObservedObject private var viewModel = HomeViewModel()
     
     @ObservedObject private var stepsOO = CoreMotionService.shared
     
-    var char = Character(
-        name: "dumm",
-        avatar: "avatar",
-        damage: 1,
-        equiment: Equiment(damage: 1, category: -1, name: ""),
-        walkCount: 111
-    )
-    
-    var mob = MonsterListItem.generateMonsters().first!
-    
-    func getHpPercent() -> Double {
-        let step = Int(truncating: stepsOO.steps) - preStepCount
-        let damage = char.damage * Double(step)
-        
-        let maxHp = mob.monster.hp
-        var currentHp = maxHp - damage
-        if currentHp < 0 { currentHp = 0 }
-        
-        return currentHp / maxHp
-    }
     
     var body: some View {
         ZStack {
@@ -69,16 +94,16 @@ struct HomeTopView: View {
                             
                             Rectangle()
                                 .fill(Color.red)
-                                .frame(width: 100 * getHpPercent(), height: 13)
+                                .frame(width: 100 * viewModel.mobHpPercent, height: 13)
                             
                             Rectangle()
                                 .fill(Color.gray)
-                                .frame(width: 100 - 100 * getHpPercent(), height: 13)
+                                .frame(width: 100 - 100 * viewModel.mobHpPercent, height: 13)
                             
                         }
                         
-                        Text("\(Int(mob.monster.hp))")
-    
+                        Text("\(Int(viewModel.mob.monster.hp))")
+                        
                     }
                     
                     Image("monster_ squirrel")
@@ -88,6 +113,9 @@ struct HomeTopView: View {
                 }
                 
             }
+        }
+        .onReceive(stepsOO.$steps) { value in
+            viewModel.takeStep(value.intValue)
         }
     }
 }
