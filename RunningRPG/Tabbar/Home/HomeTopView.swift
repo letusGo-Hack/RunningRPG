@@ -121,7 +121,7 @@ struct HomeTopView: View {
                             
                         }
                         
-                        Text("\(Int(viewModel.mob.monster.hp))")
+                        Text("\(Int(viewModel.mob.monster.currentHp)) / \(Int(viewModel.mob.monster.hp))")
                         
                     }
                     
