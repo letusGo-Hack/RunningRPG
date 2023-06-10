@@ -6,6 +6,8 @@
 //
 
 import Foundation
+import WidgetKit
+import AppIntents
 
 struct Monster: Hashable, Codable, Identifiable {
   let name: String
@@ -38,4 +40,12 @@ enum MonsterType {
       return "monster_swordshield"
     }
   }
+extension Monster {
+    static func generatMock() -> [Monster] {
+        return [
+            Monster(name: "칼든사람", hp: 100, currentHp: 100, avatar: "monster_swordshield_small")
+        ]
+        
+        
+    }
 }

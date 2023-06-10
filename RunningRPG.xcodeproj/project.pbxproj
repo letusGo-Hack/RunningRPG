@@ -20,6 +20,11 @@
 		2A9A06DA2A34311A00EC8141 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06D92A34311A00EC8141 /* HomeTopView.swift */; };
 		2A9A06DD2A3440A600EC8141 /* CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06DC2A3440A600EC8141 /* CoreMotionService.swift */; };
 		3961A9A32A344F88000745FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A06A22A3414B700EC8141 /* Assets.xcassets */; };
+		3961A9A52A345A5B000745FC /* RunAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961A9A42A345A5A000745FC /* RunAttributes.swift */; };
+		3961A9A62A345A5E000745FC /* RunAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3961A9A42A345A5A000745FC /* RunAttributes.swift */; };
+		3961A9A72A345BB1000745FC /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002C2A34240200160BD6 /* Monster.swift */; };
+		3961A9A82A345BD4000745FC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00282A34221900160BD6 /* Character.swift */; };
+		3961A9A92A345EB2000745FC /* Equiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002A2A34236700160BD6 /* Equiment.swift */; };
 		3985AB1D2A3447ED004F1AA6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE62A3447AA004F1AA6 /* WidgetKit.framework */; };
 		3985AB1E2A3447ED004F1AA6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE82A3447AA004F1AA6 /* SwiftUI.framework */; };
 		3985AB212A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985AB202A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift */; };
@@ -94,6 +99,7 @@
 		2A9A06CE2A3426B800EC8141 /* MonsterListView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListView.swift; sourceTree = "<group>"; };
 		2A9A06D92A34311A00EC8141 /* HomeTopView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeTopView.swift; sourceTree = "<group>"; };
 		2A9A06DC2A3440A600EC8141 /* CoreMotionService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoreMotionService.swift; sourceTree = "<group>"; };
+		3961A9A42A345A5A000745FC /* RunAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunAttributes.swift; sourceTree = "<group>"; };
 		3985AAE62A3447AA004F1AA6 /* WidgetKit.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = WidgetKit.framework; path = System/Library/Frameworks/WidgetKit.framework; sourceTree = SDKROOT; };
 		3985AAE82A3447AA004F1AA6 /* SwiftUI.framework */ = {isa = PBXFileReference; lastKnownFileType = wrapper.framework; name = SwiftUI.framework; path = System/Library/Frameworks/SwiftUI.framework; sourceTree = SDKROOT; };
 		3985AB1C2A3447ED004F1AA6 /* RunningRPGDynamicIslandExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunningRPGDynamicIslandExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -284,6 +290,7 @@
 				770A00282A34221900160BD6 /* Character.swift */,
 				770A002A2A34236700160BD6 /* Equiment.swift */,
 				770A002C2A34240200160BD6 /* Monster.swift */,
+				3961A9A42A345A5A000745FC /* RunAttributes.swift */,
 			);
 			path = Model;
 			sourceTree = "<group>";
@@ -481,6 +488,7 @@
 				3985AB2B2A3447EF004F1AA6 /* RunningRPGDynamicIsland.intentdefinition in Sources */,
 				770A00292A34221900160BD6 /* Character.swift in Sources */,
 				770A00352A34402400160BD6 /* MonsterInformationView.swift in Sources */,
+				3961A9A52A345A5B000745FC /* RunAttributes.swift in Sources */,
 				770A002D2A34240200160BD6 /* Monster.swift in Sources */,
 				770A002B2A34236700160BD6 /* Equiment.swift in Sources */,
 				2A9A06CF2A3426B800EC8141 /* MonsterListView.swift in Sources */,
@@ -509,9 +517,13 @@
 			buildActionMask = 2147483647;
 			files = (
 				3985AB212A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift in Sources */,
+				3961A9A92A345EB2000745FC /* Equiment.swift in Sources */,
 				3985AB232A3447ED004F1AA6 /* RunningRPGDynamicIslandLiveActivity.swift in Sources */,
+				3961A9A82A345BD4000745FC /* Character.swift in Sources */,
 				3985AB252A3447ED004F1AA6 /* RunningRPGDynamicIsland.swift in Sources */,
 				3985AB2A2A3447EF004F1AA6 /* RunningRPGDynamicIsland.intentdefinition in Sources */,
+				3961A9A72A345BB1000745FC /* Monster.swift in Sources */,
+				3961A9A62A345A5E000745FC /* RunAttributes.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
