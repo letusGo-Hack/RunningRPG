@@ -42,6 +42,7 @@ struct HomeTopView: View {
             Image("forestBG")
                 .resizable()
                 .scaledToFit()
+                .frame(minHeight: 0, maxHeight: .infinity)
             
             HStack {
                 Image("human")
