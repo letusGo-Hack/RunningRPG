@@ -33,7 +33,7 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
             DynamicIsland {
                 DynamicIslandExpandedRegion(.bottom) {
                     VStack {
-                        HStack(alignment: .center) {
+                        HStack(alignment: .center, spacing: .zero) {
                             Image("human_small")
                                 .resizable()
                                 .frame(width: 37, height: 58)
@@ -41,12 +41,8 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                             Spacer()
                             
                             VStack {
-                                Text("900")
+                                Text("10000")
                                     .font(.system(size: 40, weight: .bold))
-                                    .foregroundStyle(.white)
-                                Text("걸음 수")
-                                    .foregroundStyle(.white)
-                                Text("300")
                                     .foregroundStyle(.white)
                             }
                             
@@ -56,19 +52,22 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                                 .resizable()
                                 .frame(width: 52, height: 46)
                         }
-                        ProgressView(value: 50, total: 100) {
-                            
-                        }
+                        ProgressView(value: 50, total: 100)
                         .progressViewStyle(.linear)
                         .tint(Color.red)
+                        .scaleEffect(x: 0, y: 2, anchor: .center)
                     }
                     
                     // more content
                 }
             } compactLeading: {
-                Text("L")
+                Image("human_small")
+                    .resizable()
+                    .scaledToFit()
             } compactTrailing: {
-                Text("T")
+                Image("monster_pizza_small")
+                    .resizable()
+                    .scaledToFit()
             } minimal: {
                 Text("Min")
             }
