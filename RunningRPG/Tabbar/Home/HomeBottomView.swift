@@ -6,8 +6,10 @@
 //
 
 import SwiftUI
+import ActivityKit
 
 struct HomeBottomView: View {
+    
     var body: some View {
 		VStack {
             
@@ -34,6 +36,7 @@ struct HomeBottomView: View {
                         .foregroundColor(.red)
                         .frame(minHeight: 0, maxHeight: 50)
                     
+                    
                     Image("human") //center
                         .frame(minHeight: 0, maxHeight: .infinity)
                 }
@@ -58,3 +61,5 @@ struct HomeBottomView: View {
 #Preview {
     HomeBottomView()
 }
+
+
