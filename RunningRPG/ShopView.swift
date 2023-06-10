@@ -1,5 +1,5 @@
 //
-//  ContentView.swift
+//  ShopView.swift
 //  RunningRPG
 //
 //  Created by ParkYoungHo on 2023/06/10.
@@ -8,7 +8,7 @@
 import SwiftUI
 import SwiftData
 
-struct ContentView: View {
+struct ShopView: View {
     @Environment(\.modelContext) private var modelContext
     @Query private var items: [Item]
     
@@ -55,6 +55,6 @@ struct ContentView: View {
 }
 
 #Preview {
-    ContentView()
+    ShopView()
         .modelContainer(for: Item.self, inMemory: true)
 }
