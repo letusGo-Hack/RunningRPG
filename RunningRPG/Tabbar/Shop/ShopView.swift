@@ -8,6 +8,7 @@
 import SwiftUI
 import SwiftData
 import WidgetKit
+import ActivityKit
 
 struct ShopView: View {
     @Environment(\.modelContext) private var modelContext
@@ -16,8 +17,8 @@ struct ShopView: View {
     var body: some View {
         NavigationView {
             Button("test") {
-                let dynamicIslandWidgetAttributes = RunningRPGDynamicIslandAttributes
-                  let contentState = RunningRPGDynamicIslandAttributes.ContentState(value: "")
+                let dynamicIslandWidgetAttributes = RunningRPGDynamicIslandAttributes(name: "")
+                let contentState = RunningRPGDynamicIslandAttributes.ContentState(value: 1)
                   
                   do {
                     let activity = try Activity<RunningRPGDynamicIslandAttributes>.request(
