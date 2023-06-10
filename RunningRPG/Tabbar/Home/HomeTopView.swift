@@ -85,20 +85,6 @@ struct HomeTopView: View {
                     self.pitch = attitude.pitch
                     self.yaw = attitude.yaw
                     self.roll = attitude.roll
-                    
-                    
-                    let dynamicIslandWidgetAttributes = RunningRPGDynamicIslandAttributes(name: "")
-                    let contentState = RunningRPGDynamicIslandAttributes.ContentState(value: 1, pitch: pitch)
-                    
-                    do {
-                      let activity = try Activity<RunningRPGDynamicIslandAttributes>.request(
-                        attributes: dynamicIslandWidgetAttributes,
-                        contentState: contentState
-                      )
-                      print(activity)
-                    } catch {
-                      print(error)
-                    }
                 }
             }
         }
