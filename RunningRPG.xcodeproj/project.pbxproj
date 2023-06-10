@@ -32,8 +32,10 @@
 		770A00292A34221900160BD6 /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00282A34221900160BD6 /* Character.swift */; };
 		770A002B2A34236700160BD6 /* Equiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002A2A34236700160BD6 /* Equiment.swift */; };
 		770A002D2A34240200160BD6 /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002C2A34240200160BD6 /* Monster.swift */; };
-		7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF63E732A342F3A0051985C /* HomeBottomView.swift */; };
 		770A00302A34303100160BD6 /* MonsterListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002F2A34303100160BD6 /* MonsterListItem.swift */; };
+		770A00332A34385A00160BD6 /* MonsterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00322A34385A00160BD6 /* MonsterListItemView.swift */; };
+		770A00352A34402400160BD6 /* MonsterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00342A34402400160BD6 /* MonsterInformationView.swift */; };
+		7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF63E732A342F3A0051985C /* HomeBottomView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -102,8 +104,10 @@
 		770A00282A34221900160BD6 /* Character.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Character.swift; sourceTree = "<group>"; };
 		770A002A2A34236700160BD6 /* Equiment.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Equiment.swift; sourceTree = "<group>"; };
 		770A002C2A34240200160BD6 /* Monster.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Monster.swift; sourceTree = "<group>"; };
-		7DF63E732A342F3A0051985C /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
 		770A002F2A34303100160BD6 /* MonsterListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItem.swift; sourceTree = "<group>"; };
+		770A00322A34385A00160BD6 /* MonsterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItemView.swift; sourceTree = "<group>"; };
+		770A00342A34402400160BD6 /* MonsterInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterInformationView.swift; sourceTree = "<group>"; };
+		7DF63E732A342F3A0051985C /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -234,6 +238,7 @@
 		2A9A06D62A342BD400EC8141 /* MonsterList */ = {
 			isa = PBXGroup;
 			children = (
+				770A00312A34384B00160BD6 /* Model */,
 				770A002E2A34301B00160BD6 /* Subviews */,
 				2A9A06CE2A3426B800EC8141 /* MonsterListView.swift */,
 			);
@@ -283,9 +288,18 @@
 		770A002E2A34301B00160BD6 /* Subviews */ = {
 			isa = PBXGroup;
 			children = (
-				770A002F2A34303100160BD6 /* MonsterListItem.swift */,
+				770A00322A34385A00160BD6 /* MonsterListItemView.swift */,
+				770A00342A34402400160BD6 /* MonsterInformationView.swift */,
 			);
 			path = Subviews;
+			sourceTree = "<group>";
+		};
+		770A00312A34384B00160BD6 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				770A002F2A34303100160BD6 /* MonsterListItem.swift */,
+			);
+			path = Model;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -450,6 +464,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				3985AB322A344859004F1AA6 /* RunningRPGDynamicIslandLiveActivity.swift in Sources */,
+				770A00332A34385A00160BD6 /* MonsterListItemView.swift in Sources */,
 				7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */,
 				2A9A06DA2A34311A00EC8141 /* HomeTopView.swift in Sources */,
 				2A9A06A12A3414B500EC8141 /* HomeView.swift in Sources */,
@@ -460,6 +475,7 @@
 				2A9A069F2A3414B500EC8141 /* RunningRPGApp.swift in Sources */,
 				3985AB2B2A3447EF004F1AA6 /* RunningRPGDynamicIsland.intentdefinition in Sources */,
 				770A00292A34221900160BD6 /* Character.swift in Sources */,
+				770A00352A34402400160BD6 /* MonsterInformationView.swift in Sources */,
 				770A002D2A34240200160BD6 /* Monster.swift in Sources */,
 				770A002B2A34236700160BD6 /* Equiment.swift in Sources */,
 				3961A9A12A343C9F000745FC /* Avatar.swift in Sources */,

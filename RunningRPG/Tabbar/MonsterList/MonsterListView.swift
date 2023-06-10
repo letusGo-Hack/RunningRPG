@@ -18,55 +18,15 @@ struct MonsterListView: View {
 
     List {
       ForEach(listItems) { item in
-        NavigationLink {
-          Text("Hello")
-        } label: {
-          Image(systemName: "sun.min")
-          Text("\(item.monster.name)")
-        }
-
+        MonsterListItemView(item: item)
       }
     }
-
-//    NavigationView {
-//      List {
-//        ForEach(listItems) { item in
-//          NavigationLink {
-//            Text("Item at \(item.monster., format: Date.FormatStyle(date: .numeric, time: .standard))")
-//          } label: {
-//            Text(item.timestamp, format: Date.FormatStyle(date: .numeric, time: .standard))
-//          }
-//        }
-//        .onDelete(perform: deleteItems)
-//      }
-//      .toolbar {
-//        ToolbarItem(placement: .navigationBarTrailing) {
-//          EditButton()
-//        }
-//        ToolbarItem {
-//          Button(action: addItem) {
-//            Label("Add Item", systemImage: "plus")
-//          }
-//        }
-//      }
-//      Text("Select an item")
-//    }
+    .listRowSpacing(20)
   }
 
-  private func addItem() {
-//    withAnimation {
-//      let newItem = Item(timestamp: Date())
-//      modelContext.insert(newItem)
-//    }
-  }
+  private func addItem() {}
 
-  private func deleteItems(offsets: IndexSet) {
-//    withAnimation {
-//      for index in offsets {
-//        modelContext.delete(items[index])
-//      }
-//    }
-  }
+  private func deleteItems(offsets: IndexSet) { }
 }
 
 #Preview {

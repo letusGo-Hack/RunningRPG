@@ -19,3 +19,23 @@ struct Monster: Hashable, Codable, Identifiable {
     name
   }
 }
+
+enum MonsterType {
+  case swordShield
+  case pizza
+  case gun
+  case squirrel
+
+  var urls: String {
+    switch self {
+    case .squirrel:
+      return "monster_ squirrel"
+    case .gun:
+      return "monster_gun"
+    case .pizza:
+      return "monster_pizza"
+    case .swordShield:
+      return "monster_swordshield"
+    }
+  }
+}
