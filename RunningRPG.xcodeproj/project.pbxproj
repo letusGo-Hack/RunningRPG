@@ -169,6 +169,7 @@
 				2A9A06D32A342BB900EC8141 /* Tabbar */,
 				2A9A06A22A3414B700EC8141 /* Assets.xcassets */,
 				2A9A06A72A3414B700EC8141 /* Item.swift */,
+				3961A99F2A343C71000745FC /* DynamicIslandView */,
 				2A9A06A42A3414B700EC8141 /* Preview Content */,
 			);
 			path = RunningRPG;
@@ -449,7 +450,9 @@
 				770A00292A34221900160BD6 /* Character.swift in Sources */,
 				770A002D2A34240200160BD6 /* Monster.swift in Sources */,
 				770A002B2A34236700160BD6 /* Equiment.swift in Sources */,
+				3961A9A12A343C9F000745FC /* Avatar.swift in Sources */,
 				2A9A06CF2A3426B800EC8141 /* MonsterListView.swift in Sources */,
+				3961A99E2A3433D8000745FC /* RunningRPGDynamicIslandLiveActivity.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
