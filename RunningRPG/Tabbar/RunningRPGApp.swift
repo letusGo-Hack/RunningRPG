@@ -28,22 +28,22 @@ struct MainTabView: View {
         TabView(selection: $selectedIndex) {
             ShopView()
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("ShopView")
+                    Image(systemName: "cart")
+                    Text("Shop")
                 }
                 .tag(0)
             
             HomeView()
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("HomeView")
+                    Image(systemName: "figure.run")
+                    Text("Fight")
                 }
                 .tag(1)
             
             MonsterListView()
                 .tabItem {
-                    Image(systemName: "3.square.fill")
-                    Text("MonsterListView")
+                    Image(systemName: "list.clipboard")
+                    Text("MonsterList")
                 }
                 .tag(2)
         }

@@ -21,7 +21,7 @@ struct HomeView: View {
             HomeBottomView()
             
         }
-        .background(Color.white)
+//        .background(Color.white)
 //        .ignoresSafeArea()
     }
     
