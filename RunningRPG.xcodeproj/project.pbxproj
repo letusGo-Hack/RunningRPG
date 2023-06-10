@@ -35,6 +35,7 @@
 		770A00302A34303100160BD6 /* MonsterListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002F2A34303100160BD6 /* MonsterListItem.swift */; };
 		770A00332A34385A00160BD6 /* MonsterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00322A34385A00160BD6 /* MonsterListItemView.swift */; };
 		770A00352A34402400160BD6 /* MonsterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00342A34402400160BD6 /* MonsterInformationView.swift */; };
+		773DAEB72A344AF5006E7EF9 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAEB62A344AF5006E7EF9 /* Double+.swift */; };
 		7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF63E732A342F3A0051985C /* HomeBottomView.swift */; };
 /* End PBXBuildFile section */
 
@@ -107,6 +108,7 @@
 		770A002F2A34303100160BD6 /* MonsterListItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItem.swift; sourceTree = "<group>"; };
 		770A00322A34385A00160BD6 /* MonsterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItemView.swift; sourceTree = "<group>"; };
 		770A00342A34402400160BD6 /* MonsterInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterInformationView.swift; sourceTree = "<group>"; };
+		773DAEB62A344AF5006E7EF9 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
 		7DF63E732A342F3A0051985C /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
@@ -248,6 +250,7 @@
 			isa = PBXGroup;
 			children = (
 				2A9A06DC2A3440A600EC8141 /* CoreMotionService.swift */,
+				773DAEB62A344AF5006E7EF9 /* Double+.swift */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -467,6 +470,7 @@
 				7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */,
 				2A9A06DA2A34311A00EC8141 /* HomeTopView.swift in Sources */,
 				2A9A06A12A3414B500EC8141 /* HomeView.swift in Sources */,
+				773DAEB72A344AF5006E7EF9 /* Double+.swift in Sources */,
 				2A9A06A82A3414B700EC8141 /* Item.swift in Sources */,
 				2A9A06DD2A3440A600EC8141 /* CoreMotionService.swift in Sources */,
 				2A9A06CD2A34268E00EC8141 /* ShopView.swift in Sources */,
