@@ -84,11 +84,13 @@ struct HomeTopView: View {
                 VStack {
                     
                     Text("걸음수 : \(stepsOO.steps)")
+                        .padding(5)
                         .background(Color.white)
                         .onChange(of: stepsOO.steps) { _ in
                             print("inin")
                             self.updateRunButtonTapped()
                         }
+                        .cornerRadius(10)
                     
                     Rectangle()
                         .fill(Color.clear)
@@ -111,11 +113,11 @@ struct HomeTopView: View {
                             
                             Rectangle()
                                 .fill(Color.red)
-                                .frame(width: 100 * viewModel.mobHpPercent, height: 13)
+                                .frame(width: 100 * viewModel.mobHpPercent, height: 15)
                             
                             Rectangle()
                                 .fill(Color.gray)
-                                .frame(width: 100 - 100 * viewModel.mobHpPercent, height: 13)
+                                .frame(width: 100 - 100 * viewModel.mobHpPercent, height: 15)
                             
                         }
                         
