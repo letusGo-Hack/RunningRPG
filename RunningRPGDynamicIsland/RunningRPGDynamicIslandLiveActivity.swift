@@ -45,10 +45,10 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                             
                             HStack {
                                 Text("\(context.state.monster.currentHp)")
-                                    .font(.system(size: 40, weight: .bold))
+                                    .font(.system(size: 20, weight: .bold))
                                     .foregroundStyle(.white)
                                 Text("/\(context.state.monster.hp)")
-                                    .font(.system(size: 40, weight: .bold))
+                                    .font(.system(size: 20, weight: .bold))
                                     .foregroundStyle(.white)
                             }
                             
