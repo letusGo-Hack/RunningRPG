@@ -9,7 +9,23 @@ import SwiftUI
 
 struct HomeBottomView: View {
     var body: some View {
-        Text(/*@START_MENU_TOKEN@*/"Hello, World!"/*@END_MENU_TOKEN@*/)
+		HStack {
+			VStack { //left side equiptment
+				Image(systemName: "person")
+				Image(systemName: "person")
+				Image(systemName: "person")
+			}
+			HStack { //center
+				Image(systemName: "cloud.fill")
+			}
+			
+			VStack { //right side equiptment
+				Image(systemName: "person.fill")
+				Image(systemName: "person.fill")
+				Image(systemName: "person.fill")
+			}
+			
+		}
     }
 }
 
