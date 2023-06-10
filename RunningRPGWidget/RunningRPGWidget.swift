@@ -22,11 +22,13 @@ struct Provider: AppIntentTimelineProvider {
 
         // Generate a timeline consisting of five entries an hour apart, starting from the current date.
         let currentDate = Date()
-        for hourOffset in 0 ..< 5 {
-            let entryDate = Calendar.current.date(byAdding: .hour, value: hourOffset, to: currentDate)!
+        for offset in 0 ..< 5 {
+			let entryDate = Calendar.current.date(byAdding: .minute, value: offset, to: currentDate)!
             let entry = SimpleEntry(date: entryDate, configuration: configuration)
             entries.append(entry)
         }
+		
+		//
 
         return Timeline(entries: entries, policy: .atEnd)
     }
@@ -35,20 +37,26 @@ struct Provider: AppIntentTimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
+	let monsters: [String]
 }
 
 struct RunningRPGWidgetEntryView : View {
+	@Environment(\.widgetFamily) var family: WidgetFamily
     var entry: Provider.Entry
 
+	@ViewBuilder
     var body: some View {
-        VStack {
-            Text("Time:")
-            Text(entry.date, style: .time)
+//        VStack {
+//			Image("human")
+//			Image("monster_ squirrel")
+//			Image("human")
+//        }
+		HStack {
+			Image("monster_ squirrel")
+		}
 
-            Text("Favorite Emoji:")
-            Text(entry.configuration.favoriteEmoji)
-        }
-        .containerBackground(.fill.tertiary, for: .widget)
+
+			.containerBackground(.fill.tertiary, for: .widget)
     }
 }
 
@@ -56,9 +64,18 @@ struct RunningRPGWidget: Widget {
     let kind: String = "RunningRPGWidget"
 
     var body: some WidgetConfiguration {
-        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
-            RunningRPGWidgetEntryView(entry: entry)
-        }
+		AppIntentConfiguration(
+			kind: kind,
+			intent: ConfigurationAppIntent.self,
+			provider: Provider()) { entry in
+		RunningRPGWidgetEntryView(entry: entry)}
+			.configurationDisplayName("RunningRPG Widget")
+		
+			.description("This is RunningRPG Widget.")
+		//origin
+//        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
+//            RunningRPGWidgetEntryView(entry: entry)
+//        }
     }
 }
 

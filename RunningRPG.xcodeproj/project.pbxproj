@@ -50,6 +50,7 @@
 		7D4132E52A34575B009FABDA /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132E42A34575B009FABDA /* AppIntent.swift */; };
 		7D4132E72A34575C009FABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4132E62A34575C009FABDA /* Assets.xcassets */; };
 		7D4132EB2A34575C009FABDA /* RunningRPGWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7D4132DA2A34575B009FABDA /* RunningRPGWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
+		7D4132EF2A345B66009FABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A06A22A3414B700EC8141 /* Assets.xcassets */; };
 		7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF63E732A342F3A0051985C /* HomeBottomView.swift */; };
 /* End PBXBuildFile section */
 
@@ -540,6 +541,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				7D4132EF2A345B66009FABDA /* Assets.xcassets in Resources */,
 				7D4132E72A34575C009FABDA /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
