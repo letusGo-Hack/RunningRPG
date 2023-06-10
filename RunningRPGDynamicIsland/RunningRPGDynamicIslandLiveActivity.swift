@@ -27,19 +27,42 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                 Text("Hello")
             }
             .activityBackgroundTint(Color.cyan)
-            .activitySystemActionForegroundColor(Color.black)
+            .activitySystemActionForegroundColor(Color.white)
 
         } dynamicIsland: { context in
             DynamicIsland {
                 DynamicIslandExpandedRegion(.bottom) {
-                    HStack {
-                        Image("human_small")
-                        ProgressView(value: 1, total: 1) {
-                            Text("TEST")
+                    VStack {
+                        HStack(alignment: .center) {
+                            Image("human_small")
+                                .resizable()
+                                .frame(width: 37, height: 58)
+                            
+                            Spacer()
+                            
+                            VStack {
+                                Text("900")
+                                    .font(.system(size: 40, weight: .bold))
+                                    .foregroundStyle(.white)
+                                Text("걸음 수")
+                                    .foregroundStyle(.white)
+                                Text("300")
+                                    .foregroundStyle(.white)
+                            }
+                            
+                            Spacer()
+                            
+                            Image("monster_pizza_small")
+                                .resizable()
+                                .frame(width: 52, height: 46)
                         }
-                        .progressViewStyle(.circular)
+                        ProgressView(value: 50, total: 100) {
+                            
+                        }
+                        .progressViewStyle(.linear)
                         .tint(Color.red)
                     }
+                    
                     // more content
                 }
             } compactLeading: {
