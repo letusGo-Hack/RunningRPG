@@ -37,12 +37,11 @@ struct Provider: AppIntentTimelineProvider {
 struct SimpleEntry: TimelineEntry {
     let date: Date
     let configuration: ConfigurationAppIntent
-	let monsters: [String]
+//	let monsters: [String]
 }
 
 struct RunningRPGWidgetEntryView : View {
-	@Environment(\.widgetFamily) var family: WidgetFamily
-    var entry: Provider.Entry
+	var entry: Provider.Entry
 
 	@ViewBuilder
     var body: some View {
@@ -96,6 +95,6 @@ extension ConfigurationAppIntent {
 #Preview(as: .systemSmall) {
     RunningRPGWidget()
 } timeline: {
-    SimpleEntry(date: .now, configuration: .smiley)
+//	SimpleEntry(date: .now, configuration: .smiley, monsters: <#[String]#>)
     SimpleEntry(date: .now, configuration: .starEyes)
 }
