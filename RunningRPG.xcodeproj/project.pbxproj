@@ -19,6 +19,7 @@
 		2A9A06CF2A3426B800EC8141 /* MonsterListView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06CE2A3426B800EC8141 /* MonsterListView.swift */; };
 		2A9A06DA2A34311A00EC8141 /* HomeTopView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06D92A34311A00EC8141 /* HomeTopView.swift */; };
 		2A9A06DD2A3440A600EC8141 /* CoreMotionService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2A9A06DC2A3440A600EC8141 /* CoreMotionService.swift */; };
+		3961A9A32A344F88000745FC /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A06A22A3414B700EC8141 /* Assets.xcassets */; };
 		3985AB1D2A3447ED004F1AA6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE62A3447AA004F1AA6 /* WidgetKit.framework */; };
 		3985AB1E2A3447ED004F1AA6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE82A3447AA004F1AA6 /* SwiftUI.framework */; };
 		3985AB212A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985AB202A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift */; };
@@ -454,6 +455,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				3961A9A32A344F88000745FC /* Assets.xcassets in Resources */,
 				3985AB282A3447EF004F1AA6 /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -662,7 +664,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RunningRPG/Preview Content\"";
-				DEVELOPMENT_TEAM = KXKQCH6X89;
+				DEVELOPMENT_TEAM = P5A4NBG7AB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMotionUsageDescription = "걸음수 데이터 측정을 위해 데이터 접근 권한이 필요합니다.";
@@ -695,7 +697,7 @@
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
 				DEVELOPMENT_ASSET_PATHS = "\"RunningRPG/Preview Content\"";
-				DEVELOPMENT_TEAM = KXKQCH6X89;
+				DEVELOPMENT_TEAM = P5A4NBG7AB;
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_KEY_NSMotionUsageDescription = "걸음수 데이터 측정을 위해 데이터 접근 권한이 필요합니다.";
@@ -798,7 +800,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KXKQCH6X89;
+				DEVELOPMENT_TEAM = P5A4NBG7AB;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunningRPGDynamicIsland/Info.plist;
@@ -828,7 +830,7 @@
 				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KXKQCH6X89;
+				DEVELOPMENT_TEAM = P5A4NBG7AB;
 				GCC_C_LANGUAGE_STANDARD = gnu11;
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = RunningRPGDynamicIsland/Info.plist;
