@@ -61,3 +61,29 @@ extension MonsterListItem {
     ]
   }
 }
+
+extension MonsterListItem {
+  static func generateKilledMonsters() -> [MonsterListItem] {
+	return [
+	  MonsterListItem(
+		monster: Monster.init(
+		  name: "총든 몬스터",
+		  hp: 10.0,
+		  currentHp: 10.0,
+		  avatar: MonsterType.gun.urls,
+		  level: 0, isOpen: true
+		)
+	  ),
+	  MonsterListItem(
+		monster: Monster.init(
+		  name: "다람쥐 몬스터",
+		  hp: 20.0,
+		  currentHp: 20.0,
+		  avatar: MonsterType.squirrel.urls,
+		  level: 1,
+		  isOpen: true
+		)
+	  ),
+	]
+  }
+}

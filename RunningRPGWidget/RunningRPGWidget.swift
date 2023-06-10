@@ -7,6 +7,7 @@
 
 import WidgetKit
 import SwiftUI
+import Intents
 
 struct Provider: AppIntentTimelineProvider {
     func placeholder(in context: Context) -> SimpleEntry {
@@ -42,16 +43,21 @@ struct SimpleEntry: TimelineEntry {
 
 struct RunningRPGWidgetEntryView : View {
 	var entry: Provider.Entry
-
+	
+	var testItems: [MonsterListItem] = MonsterListItem.generateKilledMonsters()
+	
 	@ViewBuilder
     var body: some View {
+		
 //        VStack {
 //			Image("human")
 //			Image("monster_ squirrel")
 //			Image("human")
 //        }
 		HStack {
-			Image("monster_ squirrel")
+			ForEach(testItems) { item in
+				Image(item.monster.avatar)
+			}
 		}
 
 
@@ -75,7 +81,7 @@ struct RunningRPGWidget: Widget {
 //        AppIntentConfiguration(kind: kind, intent: ConfigurationAppIntent.self, provider: Provider()) { entry in
 //            RunningRPGWidgetEntryView(entry: entry)
 //        }
-    }
+	}
 }
 
 extension ConfigurationAppIntent {
