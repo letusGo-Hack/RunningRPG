@@ -14,7 +14,7 @@
 Live Activity와 Widget을 이용한 Running App
 
 그 날의 걸음 수에 따라 몬스터를 사냥하는 앱
-WWDC23에서 새로 나온 Dynamic Island에 Live Activity를 도입하고,
+WWDC23에서 새로 나온 기능Dynamic Island에 Live Activity를 도입하고,
 Interactive Widget을 도입할 계획
 어떤 식으로 도입할 것인지는 기밀 사항!
 
