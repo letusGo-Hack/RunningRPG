@@ -9,30 +9,43 @@ import SwiftUI
 
 struct HomeTopView: View {
     var body: some View {
-//        Rectangle().background(Color.red)
-        VStack {
+        
+        ZStack {
             Image("forestBG")
                 .resizable()
                 .scaledToFit()
             
-            
-            Rectangle()
-                .fill(Color.green)
-                .frame(width: 150, height: 150)
-            
-            Rectangle()
-                .fill(Color.yellow)
-                .frame(width: 150, height: 150)
+            HStack {
+                Image("human")
+                    .resizable()
+                    .scaledToFit()
+                
+                Rectangle()
+                    .fill(Color.clear)
+                    .frame(width: 150, height: 150)
+                
+                VStack {
+                    
+                    HStack(spacing: 0) {
+                        
+                        Rectangle()
+                            .fill(Color.red)
+                            .frame(width: 50, height: 10)
+                        
+                        Rectangle()
+                            .fill(Color.gray)
+                            .frame(width: 50, height: 10)
+                        
+                    }
+                    
+                    Image("monster_ squirrel")
+                        .resizable()
+                        .scaledToFit()
+                    
+                }
+                
+            }
         }
-//        ZStack {
-//            Image("forestBG")
-//                .background(Color.red)
-//
-////            HStack {
-////                
-////            }
-//        }
-//        .background(Color.red)
     }
 }
 
