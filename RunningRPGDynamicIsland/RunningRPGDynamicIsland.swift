@@ -43,8 +43,21 @@ struct SimpleEntry: TimelineEntry {
 struct RunningRPGDynamicIslandEntryView : View {
     var entry: Provider.Entry
 
+    var testItems: [MonsterListItem] = MonsterListItem.generateKilledMonsters()
+    
+    @ViewBuilder
     var body: some View {
-        Text(entry.date, style: .time)
+        
+        //        VStack {
+        //            Image("human")
+        //            Image("monster_ squirrel")
+        //            Image("human")
+        //        }
+        HStack {
+            ForEach(testItems) { item in
+                Image(item.monster.avatar)
+            }
+        }
     }
 }
 

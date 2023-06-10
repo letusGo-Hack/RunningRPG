@@ -26,6 +26,7 @@
 		3961A9A82A345BD4000745FC /* Character.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00282A34221900160BD6 /* Character.swift */; };
 		3961A9A92A345EB2000745FC /* Equiment.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002A2A34236700160BD6 /* Equiment.swift */; };
 		3961A9AA2A347A38000745FC /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAEB62A344AF5006E7EF9 /* Double+.swift */; };
+		3961A9C32A348301000745FC /* MonsterListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002F2A34303100160BD6 /* MonsterListItem.swift */; };
 		3985AB1D2A3447ED004F1AA6 /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE62A3447AA004F1AA6 /* WidgetKit.framework */; };
 		3985AB1E2A3447ED004F1AA6 /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE82A3447AA004F1AA6 /* SwiftUI.framework */; };
 		3985AB212A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 3985AB202A3447ED004F1AA6 /* RunningRPGDynamicIslandBundle.swift */; };
@@ -43,21 +44,7 @@
 		770A00332A34385A00160BD6 /* MonsterListItemView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00322A34385A00160BD6 /* MonsterListItemView.swift */; };
 		770A00352A34402400160BD6 /* MonsterInformationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A00342A34402400160BD6 /* MonsterInformationView.swift */; };
 		773DAEB72A344AF5006E7EF9 /* Double+.swift in Sources */ = {isa = PBXBuildFile; fileRef = 773DAEB62A344AF5006E7EF9 /* Double+.swift */; };
-		7D4132DB2A34575B009FABDA /* WidgetKit.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE62A3447AA004F1AA6 /* WidgetKit.framework */; };
-		7D4132DC2A34575B009FABDA /* SwiftUI.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 3985AAE82A3447AA004F1AA6 /* SwiftUI.framework */; };
-		7D4132DF2A34575B009FABDA /* RunningRPGWidgetBundle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132DE2A34575B009FABDA /* RunningRPGWidgetBundle.swift */; };
-		7D4132E12A34575B009FABDA /* RunningRPGWidgetLiveActivity.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132E02A34575B009FABDA /* RunningRPGWidgetLiveActivity.swift */; };
-		7D4132E32A34575B009FABDA /* RunningRPGWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132E22A34575B009FABDA /* RunningRPGWidget.swift */; };
-		7D4132E52A34575B009FABDA /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132E42A34575B009FABDA /* AppIntent.swift */; };
-		7D4132E72A34575C009FABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 7D4132E62A34575C009FABDA /* Assets.xcassets */; };
-		7D4132EB2A34575C009FABDA /* RunningRPGWidgetExtension.appex in Embed Foundation Extensions */ = {isa = PBXBuildFile; fileRef = 7D4132DA2A34575B009FABDA /* RunningRPGWidgetExtension.appex */; settings = {ATTRIBUTES = (RemoveHeadersOnCopy, ); }; };
-		7D4132EF2A345B66009FABDA /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2A9A06A22A3414B700EC8141 /* Assets.xcassets */; };
 		7D4132F12A346DB6009FABDA /* KilledAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132F02A346DB6009FABDA /* KilledAttributes.swift */; };
-		7D4132F22A34759D009FABDA /* KilledAttributes.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132F02A346DB6009FABDA /* KilledAttributes.swift */; };
-		7D4132F62A3476C0009FABDA /* Monster.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002C2A34240200160BD6 /* Monster.swift */; };
-		7D4132F92A347793009FABDA /* RunningRPGWidget.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132E22A34575B009FABDA /* RunningRPGWidget.swift */; };
-		7D4132FA2A3477A5009FABDA /* MonsterListItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 770A002F2A34303100160BD6 /* MonsterListItem.swift */; };
-		7D4132FB2A347AF4009FABDA /* AppIntent.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7D4132E42A34575B009FABDA /* AppIntent.swift */; };
 		7DF63E742A342F3A0051985C /* HomeBottomView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 7DF63E732A342F3A0051985C /* HomeBottomView.swift */; };
 /* End PBXBuildFile section */
 
@@ -83,13 +70,6 @@
 			remoteGlobalIDString = 3985AB1B2A3447ED004F1AA6;
 			remoteInfo = RunningRPGDynamicIslandExtension;
 		};
-		7D4132E92A34575C009FABDA /* PBXContainerItemProxy */ = {
-			isa = PBXContainerItemProxy;
-			containerPortal = 2A9A06932A3414B500EC8141 /* Project object */;
-			proxyType = 1;
-			remoteGlobalIDString = 7D4132D92A34575B009FABDA;
-			remoteInfo = RunningRPGWidgetExtension;
-		};
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXCopyFilesBuildPhase section */
@@ -99,7 +79,6 @@
 			dstPath = "";
 			dstSubfolderSpec = 13;
 			files = (
-				7D4132EB2A34575C009FABDA /* RunningRPGWidgetExtension.appex in Embed Foundation Extensions */,
 				3985AB2E2A3447EF004F1AA6 /* RunningRPGDynamicIslandExtension.appex in Embed Foundation Extensions */,
 			);
 			name = "Embed Foundation Extensions";
@@ -140,13 +119,6 @@
 		770A00322A34385A00160BD6 /* MonsterListItemView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterListItemView.swift; sourceTree = "<group>"; };
 		770A00342A34402400160BD6 /* MonsterInformationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MonsterInformationView.swift; sourceTree = "<group>"; };
 		773DAEB62A344AF5006E7EF9 /* Double+.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "Double+.swift"; sourceTree = "<group>"; };
-		7D4132DA2A34575B009FABDA /* RunningRPGWidgetExtension.appex */ = {isa = PBXFileReference; explicitFileType = "wrapper.app-extension"; includeInIndex = 0; path = RunningRPGWidgetExtension.appex; sourceTree = BUILT_PRODUCTS_DIR; };
-		7D4132DE2A34575B009FABDA /* RunningRPGWidgetBundle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningRPGWidgetBundle.swift; sourceTree = "<group>"; };
-		7D4132E02A34575B009FABDA /* RunningRPGWidgetLiveActivity.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningRPGWidgetLiveActivity.swift; sourceTree = "<group>"; };
-		7D4132E22A34575B009FABDA /* RunningRPGWidget.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = RunningRPGWidget.swift; sourceTree = "<group>"; };
-		7D4132E42A34575B009FABDA /* AppIntent.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppIntent.swift; sourceTree = "<group>"; };
-		7D4132E62A34575C009FABDA /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
-		7D4132E82A34575C009FABDA /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		7D4132F02A346DB6009FABDA /* KilledAttributes.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KilledAttributes.swift; sourceTree = "<group>"; };
 		7DF63E732A342F3A0051985C /* HomeBottomView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HomeBottomView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -182,15 +154,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4132D72A34575B009FABDA /* Frameworks */ = {
-			isa = PBXFrameworksBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D4132DC2A34575B009FABDA /* SwiftUI.framework in Frameworks */,
-				7D4132DB2A34575B009FABDA /* WidgetKit.framework in Frameworks */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
@@ -201,7 +164,6 @@
 				2A9A06B02A3414B700EC8141 /* RunningRPGTests */,
 				2A9A06BA2A3414B700EC8141 /* RunningRPGUITests */,
 				3985AB1F2A3447ED004F1AA6 /* RunningRPGDynamicIsland */,
-				7D4132DD2A34575B009FABDA /* RunningRPGWidget */,
 				3985AAE52A3447AA004F1AA6 /* Frameworks */,
 				2A9A069C2A3414B500EC8141 /* Products */,
 			);
@@ -214,7 +176,6 @@
 				2A9A06AD2A3414B700EC8141 /* RunningRPGTests.xctest */,
 				2A9A06B72A3414B700EC8141 /* RunningRPGUITests.xctest */,
 				3985AB1C2A3447ED004F1AA6 /* RunningRPGDynamicIslandExtension.appex */,
-				7D4132DA2A34575B009FABDA /* RunningRPGWidgetExtension.appex */,
 			);
 			name = Products;
 			sourceTree = "<group>";
@@ -356,19 +317,6 @@
 			path = Model;
 			sourceTree = "<group>";
 		};
-		7D4132DD2A34575B009FABDA /* RunningRPGWidget */ = {
-			isa = PBXGroup;
-			children = (
-				7D4132DE2A34575B009FABDA /* RunningRPGWidgetBundle.swift */,
-				7D4132E02A34575B009FABDA /* RunningRPGWidgetLiveActivity.swift */,
-				7D4132E22A34575B009FABDA /* RunningRPGWidget.swift */,
-				7D4132E42A34575B009FABDA /* AppIntent.swift */,
-				7D4132E62A34575C009FABDA /* Assets.xcassets */,
-				7D4132E82A34575C009FABDA /* Info.plist */,
-			);
-			path = RunningRPGWidget;
-			sourceTree = "<group>";
-		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -385,7 +333,6 @@
 			);
 			dependencies = (
 				3985AB2D2A3447EF004F1AA6 /* PBXTargetDependency */,
-				7D4132EA2A34575C009FABDA /* PBXTargetDependency */,
 			);
 			name = RunningRPG;
 			productName = RunningRPG;
@@ -445,23 +392,6 @@
 			productReference = 3985AB1C2A3447ED004F1AA6 /* RunningRPGDynamicIslandExtension.appex */;
 			productType = "com.apple.product-type.app-extension";
 		};
-		7D4132D92A34575B009FABDA /* RunningRPGWidgetExtension */ = {
-			isa = PBXNativeTarget;
-			buildConfigurationList = 7D4132EE2A34575C009FABDA /* Build configuration list for PBXNativeTarget "RunningRPGWidgetExtension" */;
-			buildPhases = (
-				7D4132D62A34575B009FABDA /* Sources */,
-				7D4132D72A34575B009FABDA /* Frameworks */,
-				7D4132D82A34575B009FABDA /* Resources */,
-			);
-			buildRules = (
-			);
-			dependencies = (
-			);
-			name = RunningRPGWidgetExtension;
-			productName = RunningRPGWidgetExtension;
-			productReference = 7D4132DA2A34575B009FABDA /* RunningRPGWidgetExtension.appex */;
-			productType = "com.apple.product-type.app-extension";
-		};
 /* End PBXNativeTarget section */
 
 /* Begin PBXProject section */
@@ -486,9 +416,6 @@
 					3985AB1B2A3447ED004F1AA6 = {
 						CreatedOnToolsVersion = 14.2;
 					};
-					7D4132D92A34575B009FABDA = {
-						CreatedOnToolsVersion = 15.0;
-					};
 				};
 			};
 			buildConfigurationList = 2A9A06962A3414B500EC8141 /* Build configuration list for PBXProject "RunningRPG" */;
@@ -508,7 +435,6 @@
 				2A9A06AC2A3414B700EC8141 /* RunningRPGTests */,
 				2A9A06B62A3414B700EC8141 /* RunningRPGUITests */,
 				3985AB1B2A3447ED004F1AA6 /* RunningRPGDynamicIslandExtension */,
-				7D4132D92A34575B009FABDA /* RunningRPGWidgetExtension */,
 			);
 		};
 /* End PBXProject section */
@@ -546,15 +472,6 @@
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
-		7D4132D82A34575B009FABDA /* Resources */ = {
-			isa = PBXResourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D4132EF2A345B66009FABDA /* Assets.xcassets in Resources */,
-				7D4132E72A34575C009FABDA /* Assets.xcassets in Resources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
 /* End PBXResourcesBuildPhase section */
 
 /* Begin PBXSourcesBuildPhase section */
@@ -573,7 +490,6 @@
 				2A9A06DD2A3440A600EC8141 /* CoreMotionService.swift in Sources */,
 				2A9A06CD2A34268E00EC8141 /* ShopView.swift in Sources */,
 				770A00302A34303100160BD6 /* MonsterListItem.swift in Sources */,
-				7D4132FB2A347AF4009FABDA /* AppIntent.swift in Sources */,
 				2A9A069F2A3414B500EC8141 /* RunningRPGApp.swift in Sources */,
 				3985AB2B2A3447EF004F1AA6 /* RunningRPGDynamicIsland.intentdefinition in Sources */,
 				770A00292A34221900160BD6 /* Character.swift in Sources */,
@@ -582,7 +498,6 @@
 				770A002D2A34240200160BD6 /* Monster.swift in Sources */,
 				770A002B2A34236700160BD6 /* Equiment.swift in Sources */,
 				2A9A06CF2A3426B800EC8141 /* MonsterListView.swift in Sources */,
-				7D4132F92A347793009FABDA /* RunningRPGWidget.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -612,24 +527,11 @@
 				3961A9A92A345EB2000745FC /* Equiment.swift in Sources */,
 				3985AB232A3447ED004F1AA6 /* RunningRPGDynamicIslandLiveActivity.swift in Sources */,
 				3961A9A82A345BD4000745FC /* Character.swift in Sources */,
+				3961A9C32A348301000745FC /* MonsterListItem.swift in Sources */,
 				3985AB252A3447ED004F1AA6 /* RunningRPGDynamicIsland.swift in Sources */,
 				3985AB2A2A3447EF004F1AA6 /* RunningRPGDynamicIsland.intentdefinition in Sources */,
 				3961A9A72A345BB1000745FC /* Monster.swift in Sources */,
 				3961A9A62A345A5E000745FC /* RunAttributes.swift in Sources */,
-			);
-			runOnlyForDeploymentPostprocessing = 0;
-		};
-		7D4132D62A34575B009FABDA /* Sources */ = {
-			isa = PBXSourcesBuildPhase;
-			buildActionMask = 2147483647;
-			files = (
-				7D4132E32A34575B009FABDA /* RunningRPGWidget.swift in Sources */,
-				7D4132F22A34759D009FABDA /* KilledAttributes.swift in Sources */,
-				7D4132E52A34575B009FABDA /* AppIntent.swift in Sources */,
-				7D4132FA2A3477A5009FABDA /* MonsterListItem.swift in Sources */,
-				7D4132E12A34575B009FABDA /* RunningRPGWidgetLiveActivity.swift in Sources */,
-				7D4132F62A3476C0009FABDA /* Monster.swift in Sources */,
-				7D4132DF2A34575B009FABDA /* RunningRPGWidgetBundle.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -650,11 +552,6 @@
 			isa = PBXTargetDependency;
 			target = 3985AB1B2A3447ED004F1AA6 /* RunningRPGDynamicIslandExtension */;
 			targetProxy = 3985AB2C2A3447EF004F1AA6 /* PBXContainerItemProxy */;
-		};
-		7D4132EA2A34575C009FABDA /* PBXTargetDependency */ = {
-			isa = PBXTargetDependency;
-			target = 7D4132D92A34575B009FABDA /* RunningRPGWidgetExtension */;
-			targetProxy = 7D4132E92A34575C009FABDA /* PBXContainerItemProxy */;
 		};
 /* End PBXTargetDependency section */
 
@@ -976,60 +873,6 @@
 			};
 			name = Release;
 		};
-		7D4132EC2A34575C009FABDA /* Debug */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KXKQCH6X89;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RunningRPGWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RunningRPGWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.letusgo.RunningRPG.RunningRPGWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Debug;
-		};
-		7D4132ED2A34575C009FABDA /* Release */ = {
-			isa = XCBuildConfiguration;
-			buildSettings = {
-				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
-				ASSETCATALOG_COMPILER_WIDGET_BACKGROUND_COLOR_NAME = WidgetBackground;
-				CODE_SIGN_STYLE = Automatic;
-				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = KXKQCH6X89;
-				GENERATE_INFOPLIST_FILE = YES;
-				INFOPLIST_FILE = RunningRPGWidget/Info.plist;
-				INFOPLIST_KEY_CFBundleDisplayName = RunningRPGWidget;
-				INFOPLIST_KEY_NSHumanReadableCopyright = "";
-				LD_RUNPATH_SEARCH_PATHS = (
-					"$(inherited)",
-					"@executable_path/Frameworks",
-					"@executable_path/../../Frameworks",
-				);
-				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.letusgo.RunningRPG.RunningRPGWidget;
-				PRODUCT_NAME = "$(TARGET_NAME)";
-				SKIP_INSTALL = YES;
-				SWIFT_EMIT_LOC_STRINGS = YES;
-				SWIFT_VERSION = 5.0;
-				TARGETED_DEVICE_FAMILY = "1,2";
-			};
-			name = Release;
-		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -1074,15 +917,6 @@
 			buildConfigurations = (
 				3985AB302A3447EF004F1AA6 /* Debug */,
 				3985AB312A3447EF004F1AA6 /* Release */,
-			);
-			defaultConfigurationIsVisible = 0;
-			defaultConfigurationName = Release;
-		};
-		7D4132EE2A34575C009FABDA /* Build configuration list for PBXNativeTarget "RunningRPGWidgetExtension" */ = {
-			isa = XCConfigurationList;
-			buildConfigurations = (
-				7D4132EC2A34575C009FABDA /* Debug */,
-				7D4132ED2A34575C009FABDA /* Release */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;

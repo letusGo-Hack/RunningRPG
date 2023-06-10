@@ -64,7 +64,7 @@ struct HomeTopView: View {
     
     @State var currentActivity: Activity<RunAttributes>! = nil
     @State var activityViewState: ActivityViewState? = nil
-    let character: Character = Character(name: "rpg", avatar: "human_small", damage: 0.5, equiment: .init(damage: 0, category: 1, name: "rpg"), walkCount: 0)
+    let character: Character = Character(name: "rpg", avatar: "human_small", damage: 1, equiment: .init(damage: 0, category: 1, name: "rpg"), walkCount: 0)
     
     @ObservedObject private var stepsOO = CoreMotionService.shared
     
@@ -200,7 +200,7 @@ extension HomeTopView {
             
             let oldMonster = currentActivity.content.state.monster
             
-            let currentHp = oldMonster.currentHp - (Double(stepsOO.steps) * run.character.damage)
+            let currentHp = oldMonster.hp - (Double(stepsOO.steps) * run.character.damage)
             
             print("currentHp : \(currentHp)")
             

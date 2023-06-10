@@ -69,11 +69,11 @@ struct RunningRPGDynamicIslandLiveActivity: Widget {
                     // more content
                 }
             } compactLeading: {
-                Image("human_small")
+                Image(context.attributes.character.avatar)
                     .resizable()
                     .scaledToFit()
             } compactTrailing: {
-                Image("monster_pizza_small")
+                Image(context.state.monster.avatar)
                     .resizable()
                     .scaledToFit()
             } minimal: {
